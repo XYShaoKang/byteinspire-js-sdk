@@ -12,26 +12,26 @@
 ### NPM
 
 ```bash
-$ npm install --save inspirecloud
+$ npm install --save @byteinspire/js-sdk
 ```
 
 ### YARN
 
 ```bash
-$ yarn add inspirecloud
+$ yarn add @byteinspire/js-sdk
 ```
 
 ### 浏览器引入
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/@byteinspire/inspirecloud/dist/inspirecloud-browser.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@byteinspire/js-sdk/dist/inspirecloud-browser.min.js"></script>
 ```
 
 ### 小程序
 
 #### 手动导入
 
-1. 点击打开 [https://unpkg.com/@byteinspire/js-sdk/dist/inspirecloud-mp.min.js](https://unpkg.com/inspirecloud/dist/inspirecloud-mp.min.js) 并下载 JS 文件，移动到小程序 `libs` 目录。
+1. 点击打开 [https://unpkg.com/@byteinspire/js-sdk/dist/inspirecloud-mp.min.js](https://unpkg.com/@byteinspire/js-sdk/dist/inspirecloud-mp.min.js) 并下载 JS 文件，移动到小程序 `libs` 目录。
 2. 在小程序中：
     ```javascript
     // 注意填写正确的相对路径
