@@ -1,9 +1,10 @@
+# 轻服务 Javascript SDK
+
+[![npm](https://img.shields.io/npm/v/@byteinspire/js-sdk.svg?style=flat-square)](https://www.npmjs.com/package/@byteinspire/js-sdk)
 [![codecov](https://codecov.io/gh/bytedance/byteinspire-js-sdk/branch/master/graph/badge.svg?token=JuNCULUxkV)](https://codecov.io/gh/bytedance/byteinspire-js-sdk)
 [![vulnerabilities](https://snyk.io/test/github/bytedance/byteinspire-js-sdk/badge.svg)](https://snyk.io/test/github/bytedance/byteinspire-js-sdk)
 [![Build Status](https://github.com/bytedance/byteinspire-js-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/bytedance/byteinspire-js-sdk/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-# 轻服务 SDK
 
 轻服务 SDK，您可以通过这个 SDK 调用轻服务中的函数和上传文件。SDK 目前支持在浏览器和 NodeJS 环境调用。
 
