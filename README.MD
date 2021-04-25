@@ -1,6 +1,6 @@
-[![codecov](https://codecov.io/gh/Margaux7/action-test/branch/master/graph/badge.svg?token=A22UJDMWKE)](https://codecov.io/gh/Margaux7/action-test)
-[![vulnerabilities](https://snyk.io/test/github/margaux7/action-test/badge.svg)](https://snyk.io/test/github/margaux7/action-test)
-[![Build Status](https://github.com/Margaux7/action-test/actions/workflows/test.yml/badge.svg)](https://github.com/Margaux7/action-test/actions)
+[![codecov](https://codecov.io/gh/bytedance/byteinspire-js-sdk/branch/master/graph/badge.svg?token=JuNCULUxkV)](https://codecov.io/gh/bytedance/byteinspire-js-sdk)
+[![vulnerabilities](https://snyk.io/test/github/bytedance/byteinspire-js-sdk/badge.svg)](https://snyk.io/test/github/bytedance/byteinspire-js-sdk)
+[![Build Status](https://github.com/bytedance/byteinspire-js-sdk/actions/workflows/test.yml/badge.svg)](https://github.com/bytedance/byteinspire-js-sdk/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # 轻服务 SDK
@@ -31,7 +31,7 @@ $ yarn add inspirecloud
 
 #### 手动导入
 
-1. 点击打开 [https://unpkg.com/@byteinspire/inspirecloud/dist/inspirecloud-mp.min.js](https://unpkg.com/inspirecloud/dist/inspirecloud-mp.min.js) 并下载 JS 文件，移动到小程序 `libs` 目录。
+1. 点击打开 [https://unpkg.com/@byteinspire/js-sdk/dist/inspirecloud-mp.min.js](https://unpkg.com/inspirecloud/dist/inspirecloud-mp.min.js) 并下载 JS 文件，移动到小程序 `libs` 目录。
 2. 在小程序中：
     ```javascript
     // 注意填写正确的相对路径
