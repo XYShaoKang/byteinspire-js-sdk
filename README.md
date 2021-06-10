@@ -65,11 +65,11 @@ MIT
 ## 发布流程
 
 ### Release
-1. 提交的 PR 合入 master 后，release-please-action 会自动提交 Release PR，该 PR 会自动修改 CHANGELOG 文件，并更新版本，如果不想在 CHANGELOG 文件出现不相关内容，可以在合入 master 是选择 squash。合入时的 commit message 需要符合以下[规范](https://github.com/marketplace/actions/release-please-action)：
+1. 提交的 PR 合入 master 时，release-please-action 会自动提交 Release PR，该 PR 会自动修改 CHANGELOG 文件，并更新版本，如果不想在 CHANGELOG 文件出现不相关内容，可以在合入 master 是选择 squash。合入时的 commit message 需要符合以下[规范](https://github.com/marketplace/actions/release-please-action)：
 
-* fix: 开头，代表修复 bug ，会自动更新 patch 版本
-* feat: 开头，代表新的 feature ，会自动更新 minor 版本
-* feat!: 或 fix!: 或 refactor!: 代表不兼容修改，会自动更新 major 版本
+* `fix:` 开头，代表修复 bug，会自动更新 patch 版本
+* `feat:` 开头，代表新的 feature ，会自动更新 minor 版本
+* `feat!:` 或 `fix!:` 或 `refactor!:` 代表不兼容修改，会自动更新 major 版本
 
 2. Release PR 合入 master 后自动创建 tag，发布 Release
 
