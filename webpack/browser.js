@@ -1,6 +1,6 @@
 const merge = require('webpack-merge');
 const config = require('./common');
-const { version } = require('@package/../../package.json');
+const { version } = require('../package.json');
 
 const browser = merge(config, {
   mode: 'none',
