@@ -4,8 +4,7 @@ import { AxiosRequestConfig, AxiosInstance } from 'axios';
 import { getBaseURL } from './utils/utils';
 import FileModule from './file';
 
-const { version } = require('@package/../../package.json');
-
+const { version } = require('../package.json');
 export type Config = {
   serviceId: string;
   baseURL?: string;
@@ -36,10 +35,10 @@ export default class InspireCloud {
     this.configs = {
       serviceId: configs.serviceId,
       baseURL:
-      configs.baseURL
+        configs.baseURL ||
         // @ts-ignore configs.baseUrl 为了兼容开发者输错的情况
-        || configs.baseUrl
-        || getBaseURL(configs.serviceId)
+        configs.baseUrl ||
+        getBaseURL(configs.serviceId)
     };
 
     this.version = version;

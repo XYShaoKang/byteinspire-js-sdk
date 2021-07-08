@@ -1,11 +1,12 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const config = require('./common');
+const { version } = require('../package.json');
 
 const mpApp = merge(config, {
   mode: 'none',
   output: {
-    filename: 'inspirecloud-mp.js'
+    filename: `inspirecloud-mp-${version}.js`
   },
   resolve: {
     aliasFields: ['weapp', 'browser'] // 此处取名为 weapp 主要是为了和 wepy、mpvue 等兼容
@@ -24,11 +25,8 @@ if (typeof wx === 'undefined' && typeof tt !== 'undefined') {
 const mpAppMin = merge(mpApp, {
   mode: 'production',
   output: {
-    filename: 'inspirecloud-mp.min.js'
+    filename: `inspirecloud-mp-${version}.min.js`
   }
 });
 
-module.exports = [
-  mpApp,
-  mpAppMin
-];
+module.exports = [mpApp, mpAppMin];
