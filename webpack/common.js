@@ -1,7 +1,8 @@
 const path = require('path');
+const merge = require('webpack-merge');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-module.exports = {
+const common = {
   target: 'web',
   entry: './src/index.ts',
   output: {
@@ -30,15 +31,15 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        include: [
-          path.resolve(__dirname, '../node_modules/weapp-polyfill')
-        ],
         loader: 'babel-loader',
         query: {
           presets: ['@babel/preset-env']
         }
       }
     ]
+  },
+  node: {
+    fs: 'empty'
   },
   optimization: {
     minimizer: [
@@ -67,3 +68,19 @@ module.exports = {
     ]
   }
 };
+
+const config = merge(common, {
+  mode: 'none',
+  output: {
+    filename: 'inspirecloud-0.2.0.js'
+  }
+});
+
+const configMin = merge(common, {
+  mode: 'production',
+  output: {
+    filename: 'inspirecloud.min-0.2.0.js'
+  }
+});
+
+module.exports = [config, configMin];
