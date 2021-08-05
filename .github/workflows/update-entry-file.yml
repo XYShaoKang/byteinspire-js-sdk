@@ -1,0 +1,29 @@
+name: Update entry file version suffix
+
+on:
+  push:
+    branches:
+      - release*
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node Version 12.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 12
+
+      - name: update package.json
+        run: node scripts/updateEntryFile.js
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v7.2.1
+        with:
+          add: 'package.json'
+          push: true
+          message: 'chore: update package.json browser & weapp entry file'
+
+
