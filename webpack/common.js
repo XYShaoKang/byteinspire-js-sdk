@@ -1,6 +1,7 @@
 const path = require('path');
 const merge = require('webpack-merge');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const version = require('../package.json').version;
 
 const common = {
   target: 'web',
@@ -72,14 +73,14 @@ const common = {
 const config = merge(common, {
   mode: 'none',
   output: {
-    filename: 'inspirecloud-0.2.0.js'
+    filename: `inspirecloud-${version}.js`
   }
 });
 
 const configMin = merge(common, {
   mode: 'production',
   output: {
-    filename: 'inspirecloud.min-0.2.0.js'
+    filename: `inspirecloud.min-${version}.js`
   }
 });
 
