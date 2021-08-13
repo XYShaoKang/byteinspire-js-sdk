@@ -28,6 +28,7 @@ describe('User', () => {
         // 单元测试无法拿到真实 openid 无法验证小程序登录流程是否走通，校验
         // headers 是否存在
         expect(error.config.headers).toHaveProperty('x-inspirecloud-sdk-version');
+        expect(error.config.status).not.toBe(404);
       }
     }
   });

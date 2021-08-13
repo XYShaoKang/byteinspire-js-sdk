@@ -91,7 +91,7 @@ export default class UserModule extends Module {
       }
 
       const resp: UserResponse = await this.inspirecloud.httpInstance.request({
-        url: `/users/platform?platform=${platform}`,
+        url: `/--platform?platform=${platform}`,
         data: postData,
         method: 'post'
       });
