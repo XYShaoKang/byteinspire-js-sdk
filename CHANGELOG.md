@@ -1,5 +1,12 @@
 # 轻服务 SDK 更新日志
 
+### [0.2.1](https://www.github.com/bytedance/byteinspire-js-sdk/compare/v0.2.0...v0.2.1) (2021-08-13)
+
+
+### Bug Fixes
+
+* 修复小程序登录接口地址错误的问题 ([e90ad28](https://www.github.com/bytedance/byteinspire-js-sdk/commit/e90ad285fadd31bf37b4b596e1adb20a8615202c))
+
 ## [0.2.0](https://www.github.com/bytedance/byteinspire-js-sdk/compare/v0.1.0...v0.2.0) (2021-08-04)
 
 
